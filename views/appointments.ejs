@@ -1,0 +1,81 @@
+<% include partials/navbar.ejs %>
+
+<main class="appointment-booking container">
+  <h1 class="text-center"><%= title %></h1>
+  <div class="doctors-container">
+    
+     <!-- Doctor #1 - Ahmed -->
+    
+    <div class="doctor-card">
+      <img src="/Assets/doctor1.jpg" alt="Dr. Ahmed">
+      <div class="doctor-info">
+        <h3>Dr. Ahmed</h3>
+        <button class="btn btn-primary" onclick="selectDoctor('Dr. Ahmed')">Book Appointment</button>
+      </div>
+    </div>
+    
+     <!-- Doctor #2 - Johnson -->
+
+    <div class="doctor-card">
+      <img src="/Assets/doctor2.jpg" alt="Dr. Johnson">
+      <div class="doctor-info">
+        <h3>Dr. Johnson</h3>
+        <button class="btn btn-primary" onclick="selectDoctor('Dr. Johnson')">Book Appointment</button>
+      </div>
+    </div>
+    
+    <!-- Doctor #3 - Willams -->
+
+    <div class="doctor-card">
+      <img src="/Assets/doctor3.jpg" alt="Dr. Williams">
+      <div class="doctor-info">
+        <h3>Dr. Williams</h3>
+        <button class="btn btn-primary" onclick="selectDoctor('Dr. Williams')">Book Appointment</button>
+      </div>
+    </div>
+  </div>
+  
+  <form action="/appointments" method="post" id="appointment-form">
+    <input type="hidden" id="doctor" name="doctor">
+    
+    <!-- Reason for patients name -->
+
+    <div class="form-group">
+      <label for="patient_name">Patient Name:</label>
+      <input type="text" id="patient_name" name="patient_name" class="form-control" placeholder="Enter your full name" required>
+    </div>
+    
+    <!-- Reason for appointment date -->
+
+    <div class="form-group">
+      <label for="appointment_date">Appointment Date:</label>
+      <input type="date" id="appointment_date" name="appointment_date" class="form-control" required>
+    </div>
+    
+    <!-- Reason for appointment time -->
+
+    <div class="form-group">
+      <label for="appointment_time">Appointment Time:</label>
+      <input type="time" id="appointment_time" name="appointment_time" class="form-control" required>
+    </div>
+     
+     <!-- Reason for appointment section -->
+    
+    <div class="form-group">
+      <label for="reason">Reason for Appointment:</label>
+      <textarea id="reason" name="reason" class="form-control" placeholder="Describe your reason for the appointment" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+  </form>
+</main>
+
+<% include partials/footer.ejs %>
+
+<script>
+  function selectDoctor(doctor) {
+    document.getElementById('doctor').value = doctor;
+    document.getElementById('appointment-form').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+

@@ -13,6 +13,23 @@ router.get('/home', function(req, res, next) {
     title: 'Home' });
 });
 
+/* GET Apointments page. */
+router.get('/appointments', function(req, res, next) {
+  res.render('appointments', { 
+    title: 'Book an Appointment'
+  });
+});
+
+router.post('/appointments', function(req, res, next) {
+  const appointmentData = req.body;
+  console.log(appointmentData);
+  res.render('appointment-confirmation', { 
+    title: 'Appointment Confirmed',
+    appointment: appointmentData
+  });
+});
+
+
 
 
 module.exports = router;
