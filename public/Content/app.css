@@ -2,15 +2,15 @@
 body {
     margin: 0;
     padding: 20px;
-    background-color: #ffffff; /* Light background color */
-    font-family: Arial, sans-serif; /* General font for the page */
-    box-sizing: border-box; /* Ensure padding doesn't add to the width */
+    background-color: #ffffff; 
+    font-family: Arial, sans-serif; 
+    box-sizing: border-box; 
   }
   
   /* Center the form heading */
   .appointment-booking h1 {
     margin-bottom: 30px;
-    color: #343a40; /* Darker text color */
+    color: #343a40; 
   }
   
   /* Doctors container styling */
@@ -21,9 +21,9 @@ body {
   }
   
   .doctor-card {
-    background-color: #f8f9fa; /* Light background color */
+    background-color: #f8f9fa; 
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s;
@@ -31,7 +31,7 @@ body {
   }
   
   .doctor-card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
+    transform: scale(1.05); 
   }
   
   .doctor-card img {
@@ -62,26 +62,25 @@ body {
   .form-control {
     padding: 10px;
     font-size: 1rem;
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ced4da; /* Light border */
+    border-radius: 5px; 
+    border: 1px solid #ced4da; 
   }
   
   textarea.form-control {
-    resize: none; /* Disable resizing */
+    resize: none; 
   }
   
   /* Submit button styling */
   .btn-primary {
-    background-color: #007bff; /* Primary blue color */
+    background-color: #007bff; 
     border-color: #007bff;
     font-size: 1.1rem;
     padding: 10px 20px;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 5px; 
   }
   
   .btn-primary:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3; 
     border-color: #0056b3;
-    text-decoration: underline; /* Underline text on hover */
   }
   
