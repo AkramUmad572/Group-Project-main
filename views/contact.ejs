@@ -1,5 +1,28 @@
 <% include partials/navbar.ejs %>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Content/contact.css">
+</head>
+<body>
+    <div class="mcontainer">
+        <form action="" class="left-side">
+            <div class="left-title">
+                <h2> Contact Us </h2>
+                <hr>
+            </div>
+        <input type="text" name="fname" placeholder="First Name" class="contact-inputs" required>
+        <input type="text" name="lname" placeholder="Last Name" class="contact-inputs" required>
+        <input type="text" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit</button>
+        </form>
+        <div class class="right-side">
+            <img src="/Assets/Doctor5.jpg" alt="">
+</body>
+</html>
 
 
 <% include partials/footer.ejs %>
