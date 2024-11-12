@@ -84,3 +84,51 @@ body {
     border-color: #0056b3;
   }
   
+
+  .homebanner {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.homebanner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.banner-text h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  position: relative;
+  left: 0;
+}
