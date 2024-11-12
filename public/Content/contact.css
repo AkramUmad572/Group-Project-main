@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Outfit';
+}
+
+.mcontainer{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-self: space-evenly;
+}
+
+.left-side{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+
+}
+
+.right-side{
+    display: flex;
+}
