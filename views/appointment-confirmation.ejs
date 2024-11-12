@@ -1,0 +1,11 @@
+<% include partials/navbar.ejs %>
+
+<main class="appointment-confirmation container">
+  <h1 class="text-center"><%= title %></h1>
+  <div class="confirmation-message">
+    <p>Thank you, <%= appointment.patient_name %>. Your appointment with <%= appointment.doctor %> has been scheduled for <%= appointment.appointment_date %> at <%= appointment.appointment_time %>.</p>
+    <p>Reason for appointment: <%= appointment.reason %></p>
+  </div>
+</main>
+
+<% include partials/footer.ejs %>
