@@ -22,3 +22,7 @@ body{
     gap:20px;
 
 }
+
+.right-side{
+    display: flex;
+}
