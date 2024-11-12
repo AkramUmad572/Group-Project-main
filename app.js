@@ -6,6 +6,8 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
+// Add the appointments router
+let appointmentsRouter = require('./routes/appointments');
 
 let app = express();
 
@@ -22,6 +24,8 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+// Use the appointments router
+app.use('/', appointmentsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -39,6 +43,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
 module.exports = app;
-
