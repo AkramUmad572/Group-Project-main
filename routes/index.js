@@ -20,6 +20,11 @@ router.get('/appointments', function(req, res, next) {
   });
 });
 
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { 
+    title: 'Contact Us'
+  });
+});
 router.post('/appointments', function(req, res, next) {
   const appointmentData = req.body;
   console.log(appointmentData);
